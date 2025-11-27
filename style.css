@@ -307,6 +307,7 @@ nav {
     gap: 0.5rem;
     flex-wrap: wrap;
     animation: navSlideIn 1s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s backwards;
+    margin-left: 2rem;
 }
 
 @keyframes navSlideIn {
@@ -1176,9 +1177,10 @@ tbody tr:hover {
 }
 
 tbody tr.overdue {
-    background: linear-gradient(135deg, rgba(139, 58, 58, 0.2), rgba(139, 58, 58, 0.1));
+    background: linear-gradient(135deg, rgba(161, 82, 82, 0.2), rgba(139, 58, 58, 0.1));
     border-left: 4px solid var(--error-red);
     animation: rowShake 1s ease infinite;
+    border-bottom: 1px solid var(--error-red);
 }
 
 @keyframes rowShake {
@@ -1196,6 +1198,9 @@ tbody tr.overdue {
 tbody td {
     padding: 1.25rem 1rem;
     color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
     font-size: 0.95rem;
     transition: all var(--transition-fast);
 }
@@ -1561,6 +1566,7 @@ footer p {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
+        margin-left: 2rem;
     }
 
     .hero h2 {

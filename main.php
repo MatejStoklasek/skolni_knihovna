@@ -95,7 +95,6 @@ $conn = getDBConnection();
                             $today = new DateTime();
                             $is_overdue = $vraceni_date < $today;
 
-                            echo "<tr" . ($is_overdue ? " class='overdue'" : "") . ">";
                             echo "<td>" . htmlspecialchars($row['nazev']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['zak_cele_jmeno']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['trida']) . "</td>";

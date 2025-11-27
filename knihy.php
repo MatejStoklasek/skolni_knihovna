@@ -160,7 +160,6 @@ if (isset($_GET['deleted'])) $success = "Kniha byla úspěšně smazána!";
                         echo "<tr><td colspan='8' style='text-align: center;'>Žádné knihy nenalezeny.</td></tr>";
                     } else {
                         while($row = $stmt->fetch()) {
-                            echo "<tr>";
                             echo "<td>" . htmlspecialchars($row['knihaID']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['nazev']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['autor_jmeno']) . "</td>";

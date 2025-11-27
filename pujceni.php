@@ -186,7 +186,6 @@ if (isset($_GET['returned'])) $success = "Kniha byla úspěšně vrácena!";
                             $today = new DateTime();
                             $is_overdue = $vraceni_date < $today;
 
-                            echo "<tr" . ($is_overdue ? " class='overdue'" : "") . ">";
                             echo "<td>" . htmlspecialchars($row['pujceniID']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['kniha_nazev']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['zak_jmeno']) . "</td>";

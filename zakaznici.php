@@ -142,7 +142,6 @@ if (isset($_GET['deleted'])) $success = "Žák byl úspěšně smazán!";
                         echo "<tr><td colspan='5' style='text-align: center;'>Žádní žáci nenalezeni.</td></tr>";
                     } else {
                         while($row = $stmt->fetch()) {
-                            echo "<tr>";
                             echo "<td>" . htmlspecialchars($row['zakID']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['jmeno']) . "</td>";
                             echo "<td>" . htmlspecialchars($row['prijmeni']) . "</td>";
